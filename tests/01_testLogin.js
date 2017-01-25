@@ -8,5 +8,6 @@ module.exports = {
             .navigate()
             .login(config.username, config.password);
         dashboardPage.checkLogin(config.name);
+        client.end();
     }
 };
