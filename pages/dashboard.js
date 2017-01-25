@@ -4,12 +4,6 @@ const pageCommands = {
       .waitForElementVisible('@usernameLabel')
       .assert.containsText('@usernameLabel', name)
   },
-  logout() {
-    return this
-      .waitForElementVisible('@navDrop')
-      .click('@navDrop')
-      .click('@logoutLink')
-  },
   clickAddBlog() {
     return this
       .waitForElementVisible('@blogLink')
