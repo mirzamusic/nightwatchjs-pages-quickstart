@@ -8,7 +8,6 @@ const pageCommands = {
     return this
       .waitForElementVisible('@navDrop')
       .click('@navDrop')
-      .waitForElementVisible('@logoutLink')
       .click('@logoutLink')
   }
 };
