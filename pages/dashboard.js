@@ -9,6 +9,15 @@ const pageCommands = {
       .waitForElementVisible('@navDrop')
       .click('@navDrop')
       .click('@logoutLink')
+  },
+  clickAddBlog() {
+    return this
+      .waitForElementVisible('@blogLink')
+      .click('@blogLink')
+      .waitForElementVisible('@postLink')
+      .click('@postLink')
+     
+     
   }
 };
 
@@ -24,6 +33,14 @@ module.exports = {
     },
     logoutLink: {
       selector: 'a[href="http://phptravels.net/admin/logout"]'
-    }
+    },
+    
+    blogLink: {
+        selector: 'a[href="#Blog"]'
+    },
+    postLink: {
+        selector: 'a[href="http://phptravels.net/admin/blog/"]'
+    },
+    
   }
 };
